@@ -48,13 +48,7 @@ data "aws_subnet_ids" "default" {
 resource "aws_lb" "portoeditora" {
   name = var.alb_name
   load_balancer_type = "application"
-  #  subnets = data.aws_subnet_ids.default.ids
-  subnets = [
-    "subnet-598a3d3f",
-    "subnet-353c7a78",
-    "subnet-b912a2e6",
-    "subnet-40cb3171"
-  ]
+  subnets = data.aws_subnet_ids.default.ids
   security_groups = [
     aws_security_group.instance.id]
 }

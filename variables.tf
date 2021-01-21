@@ -5,7 +5,7 @@ variable "instance_name" {
 
 variable "key_name" {
   type = string
-  default = "IS-WEBSITES"
+  default = "TIS-WEBSITES"
 }
 
 variable "volume_size" {
