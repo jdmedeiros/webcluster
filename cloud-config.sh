@@ -25,7 +25,7 @@ echo "<?php" >/tmp/info.php
 echo "phpinfo();" >>/tmp/info.php
 echo "?>" >>/tmp/info.php
 
-sudo cp /tmp/info.php /var/www/
+sudo cp /tmp/info.php /var/www/html
 rm /tmp/info.php
 INFO "File info.php created at the Joomla and Moodle roots."
 
